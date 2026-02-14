@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirvik Buddhacharya | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="iconButton">
+        <a href="#home">
+            <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg" alt="Home">
+        </a>
+    </div>
+
+    <section id="home">
+        <header>
+            <div class="logo">Nirvik Buddhacharya</div>
+            
+            <nav>
+                <a href="#about" class="topmenu">About Me</a>
+                <a href="#skills" class="topmenu">Skills</a>
+                <a href="#projects" class="topmenu">Projects</a>
+                <a href="#recommendations" class="topmenu">Recommendations</a>
+            </nav>
+        </header>
+    </section>
+
+    <main>
+        <section id="about" class="container">
+            <div class="b about-card">
+                <div class="about-content">
+                    <figure>
+                        <img src="https://www.upwork.com/profile-portraits/c1oe6TGXk7xHb0APLAnmeD6OSz_0HEMUS1mdOTsSALMEYdev9ImJUh5YT3lLzi4Can" alt="Nirvik Buddhacharya Profile">
+                    </figure>
+                    <article>
+                        <h1>About Me</h1>
+                        <p>
+                            I am an enthusiastic Full Stack Web Developer with a passion for buildig interactive and user-friendly web applications. 
+                            I recently completed a professional certificate in JS Full Stack and have experience with the MERN stack. 
+                            I lovee solving complex problems and learning new technologies to create efficient digital solutions.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <div class="b skills-card">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5" width="50">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CS3" width="50">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JavaScript" width="50">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="50">
+                        <p>React</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="b project-card project-1">
+                    <h3>Unit converter</h3>
+                    <p>A dynamic web tol to convert Temperature, Weight, and Distance using JavaScript and CSS grid layouts. It was not easy at all.</p>
+                </div>
+                
+                <div class="b project-card project-2">
+                    <h3>Budget tracker</h3>
+                    <p>A personal finance application helping users track income and expenses with visual charts and data persistence. lol</p>
+                </div>
+
+                <div class="b project-card project-3">
+                    <h3>Weather dashboard</h3>
+                    <p>A real-time weather application fetching data from public APIs to display forecasts for multiple cities.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="recommendations" class="container">
+            <h2>Recommendations</h2>
+            <div id="rec-list" class="recommendation-list">
+                <div class="b rec-card">
+                    <p><i>"Nirvik is a quick learner and a dedicated developer. His work on the Unit Converter project showed great attention to detail."</i></p>
+                    <h4>- Madhav Nepal, Project Manager</h4>
+                </div>
+                <div class="b rec-card">
+                    <p><i>"I was impressed by his ability to implement complex CSS grids and responsive designs seamlessly."</i></p>
+                    <h4>- Shribisha Bhattarai, Senior Developer</h4>
+                </div>
+                <div class="b rec-card">
+                    <p><i>"A reliable team player who always delivers on time. His understanding of the MERN stack is impressive for his experience level."</i></p>
+                    <h4>- Micheal Jackson(for some reason he is here), Dancer</h4>
+                </div>
+            </div>
+
+            <div class="b form-card">
+                <h3>Leave a Recommendation</h3>
+                <form id="rec-form" onsubmit="addRecommendation(event)">
+                    <input type="text" id="rec-name" placeholder="Your Name" required><br>
+                    <textarea id="rec-message" placeholder="Yor Message" rows="3" required></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+             </div>
+        </section>
+    </main>
+
+    <footer>
+        This page is owned by ABC Consultant.
+    </footer>
+</body>
+</html>
