@@ -23,7 +23,6 @@ function addRecommendation(event) {
             <p><i>"${message}"</i></p>
             <h4>- ${name}</h4>
         `;
-// Hey there! hope you are having a great time. I did use some help from AI but only for fixing some issues where i had confusion like the new card and navigation. Hope you dont mind.
 
         // Appending the new elements to the list
         recList.appendChild(newCard);
